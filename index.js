@@ -1,8 +1,8 @@
 'use strict';
 
 // API value 
-const apiKey = 'XqksW9e2W8FvbgrgoirT0zhQpacSCWRrfFLWFQfW'; 
-const searchURL = 'https://api.nasa.gov/planetary/apod/';
+//const apiKey = 'XqksW9e2W8FvbgrgoirT0zhQpacSCWRrfFLWFQfW'; 
+const searchURL = 'https://api.nasa.gov/planetary/apod?api_key=XqksW9e2W8FvbgrgoirT0zhQpacSCWRrfFLWFQfW&start_date=';
 
 
 
@@ -23,6 +23,7 @@ function scrollPageTo(myTarget, topPadding) {
 //function  
  // }
 function GETpicture() {
+  let query = $('.js-search-term').val();
     const url = searchURL + query;
 
     fetch(url)
