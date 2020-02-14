@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>NASA Photo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+div {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+  padding-left: 80px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+     background-image: url("paper.gif");
+     background-color: #cccccc;}
+
+</style>
+<body>
+
+
+
+
+
+  
+<!-- Search Section -->
+
+  
+        <div class="container">
+            <h2>Search for NASA images  </h2>
+            <p class="w3-opacity"><i>We love images from space. Enter date to get image of the day</i></p>
+    
+            <form id="js-form">
+                <label for="search-term">Please enter date in YYYY-MM-DD</label>
+                <input type="text" name="search-term" id="js-search-term" required>
+    
+                <!--<label for="max-results">Maximum results to return</label>
+                <input type="number" name="max-results" id="js-max-results" value="10">
+     -->
+                <input type="submit" value="Go!">
+            </form>
+          
+            
+    
+            <p id="js-error-message" class="error-message"></p>
+            
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    
+
+
+  <!-- The Display Section 
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Nasa Image Search</h2>-->
+    
+    <div class="hidden" id="results" aria-live="polite">
+      <h3>Search Results</h3>
+      <ul id="results-list">
+
+      </ul>
+  </div>
+        
+ 
+
+
+</body>
+</html>
